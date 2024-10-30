@@ -57,3 +57,10 @@
 
 To run all tests, use script `run_tests.sh`. The script starts the lab, fires up all challenges and runs all existing `auto-solve.sh` scripts from within the hackerlab container.
 
+
+
+## Code quality
+
+We use linters and auto formatters to maintain code quality in this repository.
+Currently, this is only the case for the dashboard (client and server).
+Please refer to the READMEs in the respective directories for instructions.
