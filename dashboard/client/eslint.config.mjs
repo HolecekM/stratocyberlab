@@ -3,26 +3,26 @@ import js from '@eslint/js';
 import globals from 'globals';
 
 export default [
-    {
-        languageOptions: {
-            globals: {
-                ...globals.browser,
-            },
-        },
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+      },
     },
-    js.configs.recommended,
-    {
-        rules: {
-            'no-throw-literal': 'error',
-        }
+  },
+  js.configs.recommended,
+  {
+    rules: {
+      'no-throw-literal': 'error',
     },
-    ...eslintPluginSvelte.configs['flat/recommended'],
-    {
-        files: ['!src/**/*'],
-        languageOptions: {
-            globals: {
-                ...globals.node,
-            },
-        },
-    }
+  },
+  ...eslintPluginSvelte.configs['flat/recommended'],
+  {
+    files: ['!src/**/*'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
 ];
